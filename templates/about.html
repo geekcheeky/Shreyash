@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <title>Shreyash</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav_left">
+          <li class="home"><a href="{% url 'home' %}">Home</a> </li>
+          <li> <a href="{% url 'about' %}">About</a> </li>
+          <li> <a href="{% url 'project' %}">Projects</a> </li>
+          <li> <a href="{% url 'blog' %}">Blog</a> </li>
+          <li class="nav_right"> <a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+      <img class="photo" src="{% static 'Data/myphoto.png'%}" alt="">
+    </div>
+    <div class="content">
+      <h1>I Build Clean And Simpel Web For User.</h1>
+      <p class="name">I'm Shreyash.</p>
+      <p>I'm from India currently working on my own startup from months my main moto <br>
+      for web devlopment is to make web user friendly for everyone.</p>
+      <p>Currently working alone but ready to work for you and with your team.</p>
+      <h3>Tech which i used for web devlopment are :</h3>
+      <p>1.<a  class="text" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a></p>
+      <p>2.<a  class="text" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a></p>
+      <p>3.<a  class="text" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JAVASCRIPT</a> </p>
+      <p>4.<a  class="text" href="https://www.python.org/" target="_blank">PYTHON</a></p>
+      <p>5.<a  class="text" href="https://www.djangoproject.com/" target="_blank">DJANGO3.0</a></p>
+    </div>
+    <footer>
+      <div class="footer text-white">
+      © 2021 Copyright:
+       <a class="shre" href="{% url 'home' %}"> Shreyash.site </a>
+     </div>
+      </footer>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/e6542615e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/about.js' %}"></script>
+</body>
+</html>

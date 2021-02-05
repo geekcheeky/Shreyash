@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <title>Shreyash</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav_left">
+          <li class="home"> <a href="{% url 'home' %}">Home</a> </li>
+          <li> <a href="{% url 'about' %}">About</a> </li>
+          <li> <a href="{% url  'project'%}">Projects</a> </li>
+          <li> <a href="{% url 'blog'%}">Blog</a> </li>
+          <li class="nav_right"> <a href="{% url 'contact'%}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+      <img class="photo" src="{% static 'Data/myphoto.png'%}" alt="">
+    </div>
+    <div class="project">
+      <h1>Did not have any project yet 🙁</h1>
+      <p>.....Mayebe oneday this page say something.</p>
+    </div>
+    <footer>
+      <div class="footer text-white">
+      © 2021 Copyright:
+       <a class="shre" href="{% url 'home' %}"> Shreyash.site </a>
+     </div>
+      </footer>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/e6542615e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

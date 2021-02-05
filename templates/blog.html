@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Shreyash</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav_left">
+          <li class="home"> <a href="{% url 'home' %}">Home</a> </li>
+          <li> <a href="{% url 'about' %}">About</a> </li>
+          <li> <a href="{% url 'project' %}">Projects</a> </li>
+          <li> <a href="{% url 'blog'%}">Blog</a> </li>
+          <li class="nav_right"> <a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+       <h1> Here i put the links of blogs which i like 🤑 or wrote 🤘📜. </h1>
+    </div>
+    <div class="blogs">
+       <p><a href="https://www.synopsys.com/glossary/what-is-open-source-software.html" target="_blank"> <img src="{% static 'Data/OpenSource.jpg' %}" alt="image"><br>What is OpenSource? </a></p>
+    </div>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/e6542615e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

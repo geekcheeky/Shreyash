@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Shreyash</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav_left">
+          <li class="home"> <a href="{% url 'home' %}">Home</a> </li>
+          <li> <a href="{% url 'about' %}">About</a> </li>
+          <li> <a href="{% url 'project' %}">Projects</a> </li>
+          <li> <a href="{% url 'blog'%}">Blog</a> </li>
+          <li class="nav_right"> <a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+      <img class="photo" src="{% static 'Data/myphoto.png'%}" alt="">
+    </div>
+    <div>
+      <h2 class="text">Hi, I'm Shreyash.</h2>
+      <h1 class="text">A Web Devloper🧐.</h1>
+      <h4 class="text">Always try to make web as simple & clean as possible for user.</h4>
+      <h4 class="text">Let's have a talk. <a class="hello" href="#">Click Here > </a> </h4>
+      <h4> <a class="hello" href="#">Learn More ></a> </h4>
+    </div>
+    <footer>
+    <div class="footer text-white">
+    © 2021 Copyright:
+     <a class="shre" href="{% url 'home' %}"> Shreyash.site </a>
+   </div>
+    </footer>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/e6542615e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

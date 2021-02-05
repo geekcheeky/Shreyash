@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <title>Shreyash</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav_left">
+          <li class="home"> <a href="{% url 'home' %}">Home</a> </li>
+          <li> <a href="{% url 'about' %}">About</a> </li>
+          <li> <a href="{% url 'project' %}">Projects</a> </li>
+          <li> <a href="{% url 'blog' %}">Blog</a> </li>
+          <li class="nav_right"> <a href="{% url  'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <img class="photo" src="{% static 'Data/myphoto.png'%}" alt="">
+    </div>
+    <div class="conatct">
+        <p>You can cotact me with email on: </p><p class="mail"> shreyashmishra156@gmail.com </p>
+        <p>Or</p>
+        <p class="mail">Send me a message:</p>
+        <form class="message">
+          <input type="text" name="name" placeholder="Your Name"><br>
+          <input type="email" name="Email"placeholder="Your Email"><br>
+          <textarea name="meassage" rows="8" cols="20" placeholder="Your Message"></textarea><br>
+          <input type="submit" value="Send message>">
+        </form>
+    </div>
+    <footer>
+        <div class="socialmedia">
+            <a class="social" href="https://twitter.com/Shreyas56597023" target="_blank">
+            <i class="fab fa-twitter text-white  fa-lg"></i>
+            </a>
+            <a class="social"href="https://github.com/shreyash-web" target="_blank">
+             <i class="fab fa-github text-white  fa-lg"></i>
+            </a>
+            <a class="social" href="https://www.linkedin.com/in/shreyash-mishra-815233203/" target="_blank">
+            <i class="fab fa-linkedin-in text-white fa-lg"></i>
+            </a>
+         </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/e6542615e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
